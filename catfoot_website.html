@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101712">
+<title>CATFOOT — The Beast of Binley Woods</title>
+<style>
+:root{--bg:#0b100d;--panel:#141d17;--panel2:#1b2920;--ink:#edf2e9;--muted:#aab7a8;--green:#b9d49a;--line:#304235;--gold:#d8c18a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Georgia,serif}
+a{color:var(--green)}a:hover{color:#fff}.wrap{width:min(1100px,92%);margin:auto}
+header{min-height:88vh;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(5,10,7,.96),rgba(5,10,7,.62)),radial-gradient(ellipse at 75% 55%,#314632 0%,#142219 36%,#080d0a 75%)}
+header:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 8%,rgba(0,0,0,.12) 8.2% 8.5%);pointer-events:none}
+.hero{position:relative;z-index:1;padding:100px 0}.eyebrow{color:var(--green);letter-spacing:.25em;text-transform:uppercase;font:700 12px Arial,sans-serif}
+h1{font:900 clamp(58px,12vw,130px)/.88 Arial,sans-serif;letter-spacing:-.08em;margin:22px 0;color:#f0f3e9}
+h1 span{display:block;color:var(--green);font-size:.34em;letter-spacing:.12em;margin:22px 0 0 8px}
+.lead{max-width:650px;font-size:clamp(18px,2.5vw,23px);color:#d3ddcf}
+.stamp{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:7px 12px;text-transform:uppercase;letter-spacing:.15em;font:12px Arial,sans-serif;margin-top:22px}
+nav{position:sticky;top:0;z-index:5;background:rgba(10,16,12,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:22px;align-items:center;overflow-x:auto;padding:14px 0;white-space:nowrap}
+nav a{text-decoration:none;color:var(--ink);font:700 12px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+nav a:first-child{color:var(--green);margin-right:auto;font-size:15px}
+section{padding:82px 0;border-bottom:1px solid var(--line)}
+.kicker{color:var(--green);font:700 12px Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase}
+h2{font:800 clamp(32px,5vw,54px)/1.05 Arial,sans-serif;letter-spacing:-.045em;margin:12px 0 24px}
+h3{font:700 21px Arial,sans-serif;margin:0 0 10px}
+p{color:#c8d2c5}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);padding:24px;border-radius:4px}
+.card p{margin-bottom:0}.tag{font:700 10px Arial,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.quote{font-size:21px;color:#e5ecdf;border-left:3px solid var(--green);padding:8px 0 8px 22px;margin:30px 0}
+.feature{background:linear-gradient(135deg,#1b2a20,#101812);padding:32px;border:1px solid var(--line)}
+.timeline{border-left:1px solid #66805f;margin:25px 0 0 8px;padding-left:25px}
+.event{position:relative;margin:0 0 28px}.event:before{content:"";position:absolute;width:9px;height:9px;background:var(--green);border-radius:50%;left:-30px;top:8px}
+.event time{color:var(--gold);font:700 11px Arial,sans-serif;letter-spacing:.12em}
+.notice{border:1px solid #796b43;background:#201e15;padding:18px 20px;color:#e9dfc1}
+.mapbox{min-height:230px;background:linear-gradient(145deg,#1b2a20,#0e1711);border:1px solid var(--line);display:grid;place-items:center;text-align:center;padding:25px}
+.mapbox .pin{font-size:42px}
+.sources li{margin:12px 0;color:#c8d2c5}
+footer{padding:35px 0;color:var(--muted);font:12px Arial,sans-serif}
+button{background:var(--green);border:0;padding:12px 18px;font-weight:700;cursor:pointer}
+input,textarea{width:100%;padding:12px;background:#0d150f;border:1px solid var(--line);color:var(--ink);margin:7px 0 16px;font:15px Georgia,serif}
+textarea{min-height:110px}
+.small{font:12px Arial,sans-serif;color:var(--muted)}
+@media(max-width:750px){.grid{grid-template-columns:1fr}.hero{padding:80px 0}section{padding:60px 0}nav .wrap{gap:17px}nav a:first-child{margin-right:5px}}
+</style>
+</head>
+<body>
+<header id="top">
+ <div class="wrap hero">
+  <div class="eyebrow">An unexplained wildlife mystery • Coventry, England</div>
+  <h1>CATFOOT<span>THE BEAST OF BINLEY WOODS</span></h1>
+  <p class="lead">A shadow in the trees. A shape at the edge of the path. Reports of a large, dark feline have given a corner of Warwickshire a creature of its own.</p>
+  <div class="stamp">Case file 001 · The mystery continues</div>
+ </div>
+</header>
+<nav><div class="wrap">
+ <a href="#top">CATFOOT FILES</a><a href="#legend">The legend</a><a href="#sightings">Sightings</a><a href="#profile">Creature profile</a><a href="#evidence">Evidence</a><a href="#theories">Theories</a><a href="#report">Report</a>
+</div></nav>
+<main>
+<section id="legend"><div class="wrap">
+ <div class="kicker">01 / The story</div><h2>A local mystery with a very big shadow.</h2>
+ <p>Catfoot is the nickname given to a mysterious large, dark cat reportedly seen around Binley Woods, on the eastern edge of Coventry. Witness descriptions have compared the animal to a panther or other large feline. The reports have attracted attention from local residents, wildlife enthusiasts and cryptid fans.</p>
+ <p>There is an important distinction: reports of sightings are real reports made by people, but they do not prove that an exotic big cat is living in the area. Catfoot remains an unexplained local mystery.</p>
+ <div class="quote">“A large black cat” — the description at the heart of the Catfoot reports.</div>
+ <div class="notice"><strong>Field note:</strong> This is an enthusiast's case file, not an official investigation. No confirmed identification of Catfoot has been established.</div>
+</div></section>
+<section id="sightings"><div class="wrap">
+ <div class="kicker">02 / Witness accounts</div><h2>The sightings file</h2>
+ <p>These are reported events and media accounts, not independently verified proof of a cryptid.</p>
+ <div class="timeline">
+  <div class="event"><time>JUNE 2026 · BINLEY WOODS</time><h3>The name catches on</h3><p>Local reports of a large cat near Binley Woods circulated in the press and online. The nickname “Catfoot” began to take hold.</p></div>
+  <div class="event"><time>OCTOBER 2026 · BINLEY WOODS AREA</time><h3>Further reports reach police</h3><p>News coverage described multiple residents reporting a large dark feline. Police relayed the reports and advised people to keep their distance and pass information to relevant wildlife organisations.</p></div>
+  <div class="event"><time>NOVEMBER 2026 · RIVER SOWE AREA</time><h3>Unusual marks in the mud</h3><p>A later online report described a runner finding what they believed were unusually large cat paw marks. The marks were not photographed, so their source remains unknown.</p></div>
+ </div>
+</div></section>
+<section id="profile"><div class="wrap">
+ <div class="kicker">03 / The alleged creature</div><h2>What is Catfoot?</h2>
+ <div class="grid">
+  <article class="card"><div class="tag">Reported appearance</div><h3>Dark feline shape</h3><p>Witness accounts describe a large, dark-coloured animal with a feline outline, sometimes compared with a panther.</p></article>
+  <article class="card"><div class="tag">Reported behaviour</div><h3>Hard to get a look at</h3><p>Accounts describe brief sightings, with the animal moving away or disappearing from view when people notice it.</p></article>
+  <article class="card"><div class="tag">Reported range</div><h3>Coventry's green edges</h3><p>Binley Woods is the best-known location associated with the nickname. Other local reports should be assessed individually.</p></article>
+ </div>
+ <p class="small">There is no verified measurement, biological sample or confirmed photograph establishing Catfoot's species.</p>
+</div></section>
+<section id="evidence"><div class="wrap">
+ <div class="kicker">04 / The case evidence</div><h2>Clues, claims and questions.</h2>
+ <div class="grid">
+  <article class="card"><div class="tag">Reported</div><h3>Eyewitness accounts</h3><p>Several people have reportedly described seeing a large dark cat. Eyewitness accounts are useful leads, but distance, lighting and expectation can affect identification.</p></article>
+  <article class="card"><div class="tag">Unconfirmed</div><h3>Footprints</h3><p>A report of unusual paw marks has circulated, but without a clear photograph or physical sample the maker cannot be identified.</p></article>
+  <article class="card"><div class="tag">Not established</div><h3>Photographic proof</h3><p>The sources linked below do not establish a clear, independently verified photograph of Catfoot itself.</p></article>
+ </div>
+ <div class="feature" style="margin-top:18px"><h3>Evidence rating: OPEN CASE</h3><p>There are reports worth documenting, but no conclusive public evidence that identifies the animal. The mystery is not the same thing as proof.</p></div>
+</div></section>
+<section id="theories"><div class="wrap">
+ <div class="kicker">05 / What could it be?</div><h2>Four possible explanations.</h2>
+ <div class="grid">
+  <article class="card"><h3>1. An escaped big cat</h3><p>Some people speculate about an exotic feline. This would require strong evidence before it could be accepted.</p></article>
+  <article class="card"><h3>2. A large domestic cat</h3><p>A dark, unusually large domestic cat seen at a distance could appear bigger or more exotic than it is.</p></article>
+  <article class="card"><h3>3. Another animal</h3><p>A dog or other wildlife, especially in poor light or partly hidden by vegetation, may be mistaken for a big cat.</p></article>
+  <article class="card"><h3>4. A mystery still unsolved</h3><p>Until reliable evidence is available, the fairest answer is that the reports remain unidentified.</p></article>
+ </div>
+</div></section>
+<section id="map"><div class="wrap">
+ <div class="kicker">06 / The reported area</div><h2>Where the story is centred.</h2>
+ <div class="mapbox"><div><div class="pin">📍</div><h3>Binley Woods &amp; eastern Coventry</h3><p>Associated with the Catfoot reports. This is a general area, not a precise sighting location.</p></div></div>
+ <p class="small">This page deliberately avoids pinpointing locations that could encourage people to approach wildlife or trespass.</p>
+</div></section>
+<section id="report"><div class="wrap">
+ <div class="kicker">07 / Add to the file</div><h2>Have you heard a Catfoot story?</h2>
+ <p>You can use this form to organise a sighting account on your own device. It does not upload or send information anywhere.</p>
+ <form id="sightingForm">
+  <label for="when">When did it happen?</label><input id="when" type="text" placeholder="Approximate date and time">
+  <label for="where">General area (no exact home addresses)</label><input id="where" type="text" placeholder="e.g. Binley Woods">
+  <label for="what">What did you observe?</label><textarea id="what" placeholder="Describe only what you actually saw or heard."></textarea>
+  <button type="submit">Preview my account</button>
+ </form>
+ <div id="preview" class="notice" hidden></div>
+ <p class="small">Safety first: never approach, follow, feed or try to photograph an unfamiliar animal at close range. Stay somewhere safe and tell a responsible adult. For an immediate danger, contact the appropriate emergency service.</p>
+</div></section>
+<section id="sources"><div class="wrap">
+ <div class="kicker">08 / Further reading</div><h2>Sources &amp; reading</h2>
+ <p>Explore the reporting behind the modern Catfoot story. These links discuss claims and reports; they do not prove the creature's identity.</p>
+ <ul class="sources">
+  <li><a href="https://www.unexplained-mysteries.com/news/400176/mystery-feline-sparks-reports-of-catfoot-roaming-english-countryside" target="_blank" rel="noopener">Unexplained Mysteries — “Mystery feline sparks reports of 'Catfoot' roaming English countryside” (October 2026)</a></li>
+  <li><a href="https://cfz.org.uk/2026/07/catfoot-etc-a-news-dump-of-west-midlands-big-cat-reports/" target="_blank" rel="noopener">Centre for Fortean Zoology — West Midlands big-cat reports (July 2026)</a></li>
+  <li><a href="https://www.reddit.com/r/cryptids/comments/1udjxmq/catfoot_sighting/" target="_blank" rel="noopener">Reddit — Catfoot discussion in r/cryptids (June 2026)</a></li>
+ </ul>
+ <p class="small">The site is an independent fan-made information page. It is not affiliated with West Midlands Police or any wildlife organisation. Last updated: November 2026.</p>
+</div></section>
+</main>
+<footer><div class="wrap">CATFOOT CASE FILES · A local legend, an open question, and a reminder to respect wildlife.<br>Made as a free, single-file website.</div></footer>
+<script>
+document.getElementById('sightingForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const when=document.getElementById('when').value.trim();
+ const where=document.getElementById('where').value.trim();
+ const what=document.getElementById('what').value.trim();
+ const box=document.getElementById('preview');
+ box.hidden=false;
+ box.innerHTML='<strong>Your sighting note (preview only)</strong><br><br><b>When:</b> '+escapeText(when||'Not provided')+'<br><b>General area:</b> '+escapeText(where||'Not provided')+'<br><b>Account:</b><br>'+escapeText(what||'Not provided')+'<br><br><span class="small">This note has not been sent or saved.</span>';
+});
+function escapeText(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+</script>
+</body></html>
